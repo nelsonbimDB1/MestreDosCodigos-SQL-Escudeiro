@@ -1,0 +1,31 @@
+Pergunta 6
+
+DML = Linguagem de Manipulação de Dados: Esses comandos indicam uma ação para o SGBD executar. Utilizados para recuperar, inserir e modificar um registro no banco de dados. Seus comandos são: INSERT, DELETE, UPDATE, SELECT e LOCK;
+
+------------------------------------------------------------------------------------------
+Pergunta 7
+
+DDL - Linguagem de Definição de Dados: Comandos DDL são responsáveis pela criação, alteração e exclusão dos objetos no banco de dados. São eles: CREATE TABLE, CREATE INDEX, ALTER TABLE, DROP TABLE, DROP VIEW e DROP INDEX;
+
+
+------------------------------------------------------------------------------------------
+Pergunta 8 
+
+DCL Linguagem de Controle de Dados: Responsável pelo controle de acesso dos usuários, controlando as sessões e transações do SGBD. Alguns de seus comandos são: COMMIT, ROLLBACK, GRANT e REVOKE.
+
+
+------------------------------------------------------------------------------------------
+Pergunta 9 
+
+
+OPÇÂO 1 
+
+Sintaxe do método após REFERENCES vem o nome da tabela
+
+alter table serviceorder add constraint fk_serviceorder_client
+     foreign key(id_client)
+       references client (id_serviceorder)
+         on delete no action
+         on update no action;
+ 
+ 
